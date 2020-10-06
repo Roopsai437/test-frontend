@@ -1,0 +1,28 @@
+<h3>Tests List</h3>
+
+
+<table border="5">
+
+<tr>
+  <th>Id</th>
+  <th>Name</th> 
+  <th>RemoveData</th> 
+</tr>  
+<tr *ngFor="let test of tests;let i=index" >
+ 
+  <td>
+    {{test.id}}
+  </td>
+
+  <td>
+ {{test.name }} 
+</td>
+
+
+  <td>
+    <button (click)="removeTest(test.id)">Remove Test</button>
+  
+  </td>  
+
+</tr>
+</table>
